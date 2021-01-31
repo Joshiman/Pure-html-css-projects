@@ -32,20 +32,21 @@
             >Age(optional)
             <input type="number" id="age-label" placeholder="Age" />
           </label>
-        </div>
-        <div>
-          <label for="age" id="dropdown">
+          <label for="role" id="dropdown" name="role" required>
             Which option best describes your current role?
-            <select name="" id="role" placeholder="Selact an option">
-              <option value="">select current role</option>
-              <option value="">Student</option>
-              <option value="">Full time job</option>
-              <option value="">Full time learner</option>
-              <option value="">Prefer not to say</option>
-              <option value="">Others</option>
+            <select name="role" id="role" placeholder="Selact an option">
+              <option value="" placeholder="select current role">
+                select current role
+              </option>
+              <option value="student">Student</option>
+              <option value="job">Full time job</option>
+              <option value="learner">Full time learner</option>
+              <option value="not-to-say">Prefer not to say</option>
+              <option value="others">Others</option>
             </select>
           </label>
         </div>
+        <div></div>
         <div class="recommend">
           <p>Which option best describes your current role?</p>
           <label for="definitely">
@@ -56,7 +57,12 @@
             />Definitely
           </label>
           <label for="maybe">
-            <input id="maybe" type="radio" name="recommondation" />Maybe
+            <input
+              class="radio-input"
+              id="maybe"
+              type="radio"
+              name="recommondation"
+            />Maybe
           </label>
           <label for="not-sure">
             <input id="not-sure" type="radio" name="recommondation" />Not sure
