@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: rgb(243, 242, 242);
+}
+
+button {
+  background-color: yellow;
+  font-size: medium;
+  font-weight: solid;
+  cursor: pointer;
+}
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 65px;
+  width: 100vw;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  /* background-color: rgb(85, 111, 111); */
+  background-color: rgb(243, 242, 242);
+}
+#nav-bar {
+  width: 100vw;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin: 2em;
+  justify-content: space-between;
+}
+#header-img {
+  margin-right: 30px;
+}
+
+.nav-link {
+  margin: auto 2em;
+  text-decoration: none;
+}
+
+.nav-link li {
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+#header-img {
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+/*  Forms */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-top: 123px;
+}
+
+#form h1 {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#form input {
+  height: 3em;
+  width: 360px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+#form button {
+  width: 150px;
+  height: 2.5em;
+  border: 4px;
+  cursor: pointer;
+}
+
+/* service -grid */
+
+#service {
+  height: 400px;
+  margin: 0px 100px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#service h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  align-content: center;
+  padding-top: 40px;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.grid-text p {
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+
+/*  How it work/video show  */
+
+.how-it-work {
+  display: flex;
+  margin: 0px 100px;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+/*  card price  */
+
+#price-card {
+  height: 400px;
+  margin: 20px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: azure;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clac(100% / 3);
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 1.3em;
+  transition: transform 0.2s ease-in;
+}
+
+.card h3 {
+  padding: 20px 0px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.card h2 {
+  padding: 20px 0px;
+  margin-top: 15px;
+}
+
+.card li {
+  /* display: flex; */
+  display: list-item;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  margin-top: 20px;
+  width: fit-content;
+  height: 40px;
+  width: 120px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border-style: 1px black;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  display: flex;
+  grid-template-columns: auto;
+  margin-top: 40px;
+  height: 200px;
+  padding: 80px;
+  justify-content: flex-end;
+  background-color: rgb(3, 5, 28);
+  color: white;
+}
+/*  */
+.footer h3 {
+  margin-right: 40px;
+}
+
+/* small screen */
+
+@media (max-width: 1100px) #service, #price-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#service {
+  grid-template-columns: 1fr;
+}
+
+#service p {
+  font-size: 1em;
+}
+
+.footer {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}

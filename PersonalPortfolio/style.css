@@ -1,0 +1,147 @@
+* .nav {
+  position: fixed;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#navbar {
+  padding: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  padding: 1rem;
+}
+
+.nav-list a {
+  text-align: end;
+  margin-right: 100px;
+  font-size: 1.5em;
+}
+
+/* welcome page  */
+
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+  background-color: bisque;
+}
+
+#welcome-section h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#projects {
+  margin: 1em;
+}
+#projects h2 {
+  text-align: center;
+  margin: 1.5em auto 1em;
+}
+
+.project-main {
+  margin: 10px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  text-align: center;
+}
+
+.project-main img {
+  margin: 10px;
+  display: grid;
+  gap: 1.5em;
+  text-align: center;
+}
+
+.single-project :hover {
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+  padding: 5px;
+  z-index: 15px;
+}
+
+/* footer */
+
+.footer {
+  height: 500px;
+  width: 100vw;
+  text-align: center;
+  background-color: var(--clr-grey-7);
+  padding-top: 3em;
+}
+
+.footer h3 {
+  margin: 20px auto 60px;
+  font-style: italic;
+}
+
+#profile-link {
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5em;
+}
+
+#profile-link a {
+  margin: 50px;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    width: 100vw;
+  }
+
+  .nav-list a {
+    margin: 10px 10px;
+  }
+
+  #welcome-section h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 3em;
+  }
+
+  .project-main {
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    overflow: hidden;
+  }
+
+  .footer {
+    width: 100%;
+    height: 60vh;
+    font-size: 10px;
+  }
+
+  .project-main img {
+    width: 80vw;
+    align-content: center;
+  }
+
+  .footer h1 {
+    font-size: 3em;
+  }
+  .footer h3 {
+    font-size: 2em;
+  }
+
+  #profile-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profile-link a {
+    margin: 10px;
+  }
+}
